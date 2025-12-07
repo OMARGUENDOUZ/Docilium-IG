@@ -1,13 +1,19 @@
 {
-  "package": "ctpm",
+  "package": "docelium",
   "version": "0.1.0",
   "fhirVersion": "5.0.0",
   "extensions": [],
   "profiles": {
     "ResearchStudy": [
       {
-        "url": "http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study",
+        "url": "http://docelium.health/StructureDefinition/clinical-study",
         "title": "Clinical Study Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://docelium.health/StructureDefinition/clinical-trial-patient",
+        "title": "Clinical Trial Patient Profile"
       }
     ]
   },

@@ -1,4 +1,4 @@
-# Clinical Study Profile - v0.1.0
+# Clinical Study Profile - Clinical Trial Pharmacy Management v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study | *Version*:0.1.0 |
+| *Official URL*:http://docelium.health/StructureDefinition/clinical-study | *Version*:0.1.0 |
 | Draft as of 2025-12-07 | *Computable Name*:ClinicalStudy |
 
  
@@ -18,7 +18,7 @@ A profile for clinical studies.
 
 * Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ctpm|current/StructureDefinition/clinical-study)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/docelium|current/StructureDefinition/clinical-study)
 
 ### Formal Views of Profile Content
 
@@ -36,20 +36,20 @@ Other representations of profile: [CSV](StructureDefinition-clinical-study.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "clinical-study",
-  "url" : "http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study",
+  "url" : "http://docelium.health/StructureDefinition/clinical-study",
   "version" : "0.1.0",
   "name" : "ClinicalStudy",
   "title" : "Clinical Study Profile",
   "status" : "draft",
-  "date" : "2025-12-07T16:24:07+01:00",
-  "publisher" : "DOCILIUM",
+  "date" : "2025-12-07T21:23:47+01:00",
+  "publisher" : "DOCELIUM",
   "contact" : [
     {
-      "name" : "DOCILIUM",
+      "name" : "DOCELIUM",
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://docilium.org"
+          "value" : "http://docelium.org"
         }
       ]
     }
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-study.csv),
         "id" : "ResearchStudy.identifier",
         "path" : "ResearchStudy.identifier",
         "min" : 1,
-        "max" : "1",
+        "max" : "3",
         "mustSupport" : true
       },
       {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-study.csv),
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"
+          "valueSet" : "http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas"
         }
       },
       {

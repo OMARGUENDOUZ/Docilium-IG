@@ -1,4 +1,4 @@
-# ctpm#0.1.0: null
+# docelium#0.1.0: Clinical Trial Pharmacy Management
 
 ## Pages
 
@@ -14,7 +14,8 @@
 ### Resource Profiles
 
 * [Clinical Study Profile](StructureDefinition-clinical-study.md)
+* [Clinical Trial Patient Profile](StructureDefinition-clinical-trial-patient.md)
 
 ### ImplementationGuides
 
-* [ClinicalTrialPharmacyManagementImplementationGuideCTPMIG](index.md)
+* [Clinical Trial Pharmacy Management](index.md)

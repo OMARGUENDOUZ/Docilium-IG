@@ -13,7 +13,7 @@
     <sch:title>f:ResearchStudy</sch:title>
     <sch:rule context="f:ResearchStudy">
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 3">identifier: maximum cardinality of 'identifier' is 3</sch:assert>
       <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>
       <sch:assert test="count(f:phase) &gt;= 1">phase: minimum cardinality of 'phase' is 1</sch:assert>
       <sch:assert test="count(f:classifier) &gt;= 1">classifier: minimum cardinality of 'classifier' is 1</sch:assert>

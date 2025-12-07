@@ -1,4 +1,4 @@
-# Artifacts Summary - v0.1.0
+# Artifacts Summary - Clinical Trial Pharmacy Management v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -14,6 +14,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [Clinical Study Profile](StructureDefinition-clinical-study.md) | A profile for clinical studies. |
+| [Clinical Trial Patient Profile](StructureDefinition-clinical-trial-patient.md) | A profile for patients enrolled in clinical trials. |
 
 ### Terminology: Value Sets 
 

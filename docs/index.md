@@ -1,4 +1,4 @@
-# Home - v0.1.0
+# Home - Clinical Trial Pharmacy Management v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm | *Version*:0.1.0 |
-| Draft as of 2025-12-07 | *Computable Name*:ClinicalTrialPharmacyManagementImplementationGuideCTPMIG |
+| *Official URL*:http://docelium.health/ImplementationGuide/docelium | *Version*:0.1.0 |
+| Draft as of 2025-12-07 | *Computable Name*:ClinicalTrialPharmacyManagementImplementationGuide |
 
 # Clinical Trial Pharmacy Management Implementation Guide (CTPM IG)
 
@@ -21,25 +21,27 @@ Feel free to modify this index page with your own awesome content!
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ctpm",
-  "url" : "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm",
+  "id" : "docelium",
+  "url" : "http://docelium.health/ImplementationGuide/docelium",
   "version" : "0.1.0",
-  "name" : "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG",
+  "name" : "ClinicalTrialPharmacyManagementImplementationGuide",
+  "title" : "Clinical Trial Pharmacy Management",
   "status" : "draft",
-  "date" : "2025-12-07T16:24:07+01:00",
-  "publisher" : "DOCILIUM",
+  "date" : "2025-12-07T21:23:47+01:00",
+  "publisher" : "DOCELIUM",
   "contact" : [
     {
-      "name" : "DOCILIUM",
+      "name" : "DOCELIUM",
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://docilium.org"
+          "value" : "http://docelium.org"
         }
       ]
     }
   ],
-  "packageId" : "ctpm",
+  "description" : "This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures.",
+  "packageId" : "docelium",
   "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
   "dependsOn" : [
@@ -88,6 +90,20 @@ Feel free to modify this index page with your own awesome content!
         },
         "name" : "Clinical Study Profile",
         "description" : "A profile for clinical studies.",
+        "isExample" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/clinical-trial-patient"
+        },
+        "name" : "Clinical Trial Patient Profile",
+        "description" : "A profile for patients enrolled in clinical trials.",
         "isExample" : false
       },
       {
@@ -292,7 +308,7 @@ Feel free to modify this index page with your own awesome content!
           "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code" : "path-history"
         },
-        "value" : "http://docilium.health/fhir/ctpm/history.html"
+        "value" : "http://docelium.health/history.html"
       },
       {
         "code" : {

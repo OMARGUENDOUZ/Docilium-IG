@@ -6,30 +6,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm> a fhir:ImplementationGuide ;
+<http://docelium.health/ImplementationGuide/docelium> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ctpm"] ; # 
+  fhir:id [ fhir:v "docelium"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ctpm</b></p><a name=\"ctpm\"> </a><a name=\"hcctpm\"> </a><h2>ClinicalTrialPharmacyManagementImplementationGuideCTPMIG</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide docelium</b></p><a name=\"docelium\"> </a><a name=\"hcdocelium\"> </a><h2>ClinicalTrialPharmacyManagementImplementationGuide</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>http://docelium.health/ImplementationGuide/docelium</pre><div><p>This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures.</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm"^^xsd:anyURI ;
-     fhir:l <http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm>
+     fhir:v "http://docelium.health/ImplementationGuide/docelium"^^xsd:anyURI ;
+     fhir:l <http://docelium.health/ImplementationGuide/docelium>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG"] ; # 
+  fhir:name [ fhir:v "ClinicalTrialPharmacyManagementImplementationGuide"] ; # 
+  fhir:title [ fhir:v "Clinical Trial Pharmacy Management"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-07T16:24:07+01:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "DOCILIUM"] ; # 
+  fhir:date [ fhir:v "2025-12-07T21:23:47+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOCELIUM"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "DOCILIUM" ] ;
+     fhir:name [ fhir:v "DOCELIUM" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://docilium.org" ]
+       fhir:value [ fhir:v "http://docelium.org" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "ctpm"] ; # 
+  fhir:description [ fhir:v "This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures."] ; # 
+  fhir:packageId [ fhir:v "docelium"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
   fhir:dependsOn ( [
@@ -92,7 +94,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study> ;
+         fhir:l <http://docelium.health/StructureDefinition/clinical-study> ;
          fhir:reference [ fhir:v "StructureDefinition/clinical-study" ]
        ] ;
        fhir:name [ fhir:v "Clinical Study Profile" ] ;
@@ -106,11 +108,29 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://docelium.health/StructureDefinition/clinical-trial-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/clinical-trial-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Trial Patient Profile" ] ;
+       fhir:description [ fhir:v "A profile for patients enrolled in clinical trials." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://docilium.health/fhir/ctpm/ValueSet/TherapeuticAreasValueSet> ;
+         fhir:l <http://docelium.health/ValueSet/TherapeuticAreasValueSet> ;
          fhir:reference [ fhir:v "ValueSet/TherapeuticAreasValueSet" ]
        ] ;
        fhir:name [ fhir:v "Therapeutic Areas for Clinical Trials" ] ;
@@ -366,7 +386,7 @@
          ] ;
          fhir:code [ fhir:v "path-history" ]
        ] ;
-       fhir:value [ fhir:v "http://docilium.health/fhir/ctpm/history.html" ]
+       fhir:value [ fhir:v "http://docelium.health/history.html" ]
      ] [
        fhir:code [
          fhir:system [

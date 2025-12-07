@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ctpm"/>
+  <id value="docelium"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ctpm</b></p><a name="ctpm"> </a><a name="hcctpm"> </a><h2>ClinicalTrialPharmacyManagementImplementationGuideCTPMIG</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide docelium</b></p><a name="docelium"> </a><a name="hcdocelium"> </a><h2>ClinicalTrialPharmacyManagementImplementationGuide</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>http://docelium.health/ImplementationGuide/docelium</pre><div><p>This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures.</p>
+</div></div>
   </text>
-  <url value="http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm"/>
+  <url value="http://docelium.health/ImplementationGuide/docelium"/>
   <version value="0.1.0"/>
-  <name value="ClinicalTrialPharmacyManagementImplementationGuideCTPMIG"/>
+  <name value="ClinicalTrialPharmacyManagementImplementationGuide"/>
+  <title value="Clinical Trial Pharmacy Management"/>
   <status value="draft"/>
-  <date value="2025-12-07T16:24:07+01:00"/>
-  <publisher value="DOCILIUM"/>
+  <date value="2025-12-07T21:23:47+01:00"/>
+  <publisher value="DOCELIUM"/>
   <contact>
-    <name value="DOCILIUM"/>
+    <name value="DOCELIUM"/>
     <telecom>
       <system value="url"/>
-      <value value="http://docilium.org"/>
+      <value value="http://docelium.org"/>
     </telecom>
   </contact>
-  <packageId value="ctpm"/>
+  <description value="This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures."/>
+  <packageId value="docelium"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
   <dependsOn id="hl7tx">
@@ -50,6 +53,17 @@
       </reference>
       <name value="Clinical Study Profile"/>
       <description value="A profile for clinical studies."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-trial-patient"/>
+      </reference>
+      <name value="Clinical Trial Patient Profile"/>
+      <description value="A profile for patients enrolled in clinical trials."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -247,7 +261,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="path-history"/>
       </code>
-      <value value="http://docilium.health/fhir/ctpm/history.html"/>
+      <value value="http://docelium.health/history.html"/>
     </parameter>
     <parameter>
       <code>

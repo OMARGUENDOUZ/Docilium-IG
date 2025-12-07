@@ -1,9 +1,10 @@
-Alias: $therapeutic-areas = http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas
+Alias: $therapeutic-areas = http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas
 
 ValueSet: TherapeuticAreasValueSet
 Id: TherapeuticAreasValueSet
 Title: "Therapeutic Areas for Clinical Trials"
-* ^url = "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"
+Description: "A value set of therapeutic areas relevant to clinical trials."
+* ^url = "http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas"
 * ^status = #draft
 * $therapeutic-areas#oncology "Oncologie"
 * $therapeutic-areas#cardiology "Cardiologie"

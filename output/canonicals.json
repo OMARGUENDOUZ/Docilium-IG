@@ -1,22 +1,29 @@
 [
   {
-    "id" : "ctpm",
+    "id" : "docelium",
     "type" : "ImplementationGuide",
-    "url" : "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm",
+    "url" : "http://docelium.health/ImplementationGuide/docelium",
     "version" : "0.1.0",
-    "name" : "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG"
+    "name" : "ClinicalTrialPharmacyManagementImplementationGuide"
   },
   {
     "id" : "clinical-study",
     "type" : "StructureDefinition",
-    "url" : "http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study",
+    "url" : "http://docelium.health/StructureDefinition/clinical-study",
     "version" : "0.1.0",
     "name" : "ClinicalStudy"
   },
   {
+    "id" : "clinical-trial-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://docelium.health/StructureDefinition/clinical-trial-patient",
+    "version" : "0.1.0",
+    "name" : "ClinicalTrialPatient"
+  },
+  {
     "id" : "TherapeuticAreasValueSet",
     "type" : "ValueSet",
-    "url" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas",
+    "url" : "http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas",
     "version" : "0.1.0",
     "name" : "TherapeuticAreasValueSet"
   }

@@ -1,12 +1,13 @@
-ClinicalTrialPharmacyManagementImplementationGuideCTPMIG : Validation Results
+ClinicalTrialPharmacyManagementImplementationGuide : Validation Results
 =========================================
 
-err = 4, warn = 15, info = 16
+err = 4, warn = 16, info = 16
 $--
-Generated $--. FHIR version $-- for ctpm#$-- (canonical = http://docilium.health/fhir/ctpm)
+Generated $--. FHIR version $-- for docelium#$-- (canonical = http://docelium.health)
  Build Errors : 0 / 4 / 0
- C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ImplementationGuide-ctpm : 0 / 0 / 16
+ C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ImplementationGuide-docelium : 0 / 0 / 16
  C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\StructureDefinition-clinical-study : 0 / 8 / 1
+ C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\StructureDefinition-clinical-trial-patient : 0 / 1 / 1
  C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet : 4 / 3 / 2
 </table>
 == n/a ==
@@ -14,22 +15,22 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated\resources\ImplementationGuide-ctpm.json ==
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[3].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
-INFORMATION: ImplementationGuide/ctpm: ImplementationGuide.definition.parameter[22].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+== fsh-generated\resources\ImplementationGuide-docelium.json ==
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[3].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/docelium: ImplementationGuide.definition.parameter[22].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 == fsh-generated\resources\StructureDefinition-clinical-study.json ==
 WARNING: StructureDefinition/clinical-study: StructureDefinition: The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental
 WARNING: StructureDefinition/clinical-study: StructureDefinition.snapshot.element[18].binding: The definition for the element 'ResearchStudy.label.type' binds to the value set 'http://hl7.org/fhir/ValueSet/title-type|5.0.0' which is experimental, but this structure is not labeled as experimental
@@ -38,13 +39,15 @@ WARNING: StructureDefinition/clinical-study: StructureDefinition.snapshot.elemen
 WARNING: StructureDefinition/clinical-study: StructureDefinition.snapshot.element[43].binding: The definition for the element 'ResearchStudy.associatedParty.role' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-party-role|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/clinical-study: StructureDefinition.snapshot.element[51].binding: The definition for the element 'ResearchStudy.progressStatus.state' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-status|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/clinical-study: StructureDefinition.snapshot.element[69].binding: The definition for the element 'ResearchStudy.comparisonGroup.type' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-arm-type|5.0.0' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition.where(url = 'http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://docelium.health/StructureDefinition/clinical-study'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-clinical-trial-patient.json ==
+WARNING: StructureDefinition.where(url = 'http://docelium.health/StructureDefinition/clinical-trial-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\ValueSet-TherapeuticAreasValueSet.json ==
-ERROR: ValueSet.where(url = 'http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas'): Conformance resource C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet.json - the canonical URL (http://docilium.health/fhir/ctpm/ValueSet/TherapeuticAreasValueSet) does not match the URL (http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.url: Resource id/url mismatch: TherapeuticAreasValueSet/http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas
-WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas'
-INFORMATION: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+ERROR: ValueSet.where(url = 'http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas'): Conformance resource C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet.json - the canonical URL (http://docelium.health/ValueSet/TherapeuticAreasValueSet) does not match the URL (http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet.url: Resource id/url mismatch: TherapeuticAreasValueSet/http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas
+WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas'
+INFORMATION: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'TherapeuticAreasValueSet'): Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas' could not be found, so the value set cannot be expanded
-ERROR: C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet: URL Mismatch http://docilium.health/fhir/ctpm/ValueSet/TherapeuticAreasValueSet vs http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas
+ERROR: ValueSet.where(id = 'TherapeuticAreasValueSet'): Unable to expand imported value set: No server available
+ERROR: C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet: URL Mismatch http://docelium.health/ValueSet/TherapeuticAreasValueSet vs http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas

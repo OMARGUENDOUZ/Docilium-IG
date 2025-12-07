@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ctpm
-canonical: http://docilium.health/fhir/ctpm
-name: Clinical Trial Pharmacy Management Implementation Guide (CTPM IG)
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+id: docelium
+canonical: http://docelium.health
+name: Clinical Trial Pharmacy Management Implementation Guide
+title: Clinical Trial Pharmacy Management
+description: This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -16,8 +16,8 @@ releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: DOCILIUM
-  url: http://docilium.org
+  name: DOCELIUM
+  url: http://docelium.org
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

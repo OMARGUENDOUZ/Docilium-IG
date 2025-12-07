@@ -1,19 +1,19 @@
 {
-  "url" : "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm",
-  "name" : "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG",
-  "title" : null,
-  "description" : "",
+  "url" : "http://docelium.health/ImplementationGuide/docelium",
+  "name" : "ClinicalTrialPharmacyManagementImplementationGuide",
+  "title" : "Clinical Trial Pharmacy Management",
+  "description" : "This Implementation Guide defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings. It covers drug accountability, dispensing workflows, temperature monitoring, IWRS integration, and GCP/GMP compliance requirements including audit trails and e-signatures.",
   "status" : "draft",
-  "package-id" : "ctpm",
+  "package-id" : "docelium",
   "ig-ver" : "0.1.0",
-  "date" : "Sun, 07 Dec, 2025 16:24:07 +0100",
-  "dateISO8601" : "2025-12-07T16:24:07+01:00",
+  "date" : "Sun, 07 Dec, 2025 21:23:47 +0100",
+  "dateISO8601" : "2025-12-07T21:23:47+01:00",
   "errs" : 4,
-  "warnings" : 15,
+  "warnings" : 16,
   "hints" : 16,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1573186816
+  "maxMemory" : 1467454376
 }

@@ -1,4 +1,4 @@
-# Therapeutic Areas for Clinical Trials - v0.1.0
+# Therapeutic Areas for Clinical Trials - Clinical Trial Pharmacy Management v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas | *Version*:0.1.0 |
+| *Official URL*:http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas | *Version*:0.1.0 |
 | Draft as of 2025-12-07 | *Computable Name*:TherapeuticAreasValueSet |
 
  **References** 
@@ -17,7 +17,7 @@
 
 ### Définition logique (CLD)
 
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans `http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas`version Non précisé (utilise la dernière version provenant du serveur de terminologie)
+* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans `http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas`version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
@@ -46,20 +46,20 @@ No Expansion for this valueset (not supported by Publication Tooling)
 {
   "resourceType" : "ValueSet",
   "id" : "TherapeuticAreasValueSet",
-  "url" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas",
+  "url" : "http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas",
   "version" : "0.1.0",
   "name" : "TherapeuticAreasValueSet",
   "title" : "Therapeutic Areas for Clinical Trials",
   "status" : "draft",
-  "date" : "2025-12-07T16:24:07+01:00",
-  "publisher" : "DOCILIUM",
+  "date" : "2025-12-07T21:23:47+01:00",
+  "publisher" : "DOCELIUM",
   "contact" : [
     {
-      "name" : "DOCILIUM",
+      "name" : "DOCELIUM",
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://docilium.org"
+          "value" : "http://docelium.org"
         }
       ]
     }
@@ -67,7 +67,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "compose" : {
     "include" : [
       {
-        "system" : "http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas",
+        "system" : "http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas",
         "concept" : [
           {
             "code" : "oncology",

@@ -3,25 +3,25 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="TherapeuticAreasValueSet"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ValueSet TherapeuticAreasValueSet</b></p><a name="TherapeuticAreasValueSet"> </a><a name="hcTherapeuticAreasValueSet"> </a><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <code>http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas</code><span title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé"> version Non précisé (utilise la dernière version provenant du serveur de terminologie)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>oncology</td><td>Oncologie</td></tr><tr><td>cardiology</td><td>Cardiologie</td></tr><tr><td>neurology</td><td>Neurologie</td></tr><tr><td>infectious-disease</td><td>Maladies infectieuses</td></tr><tr><td>immunology</td><td>Immunologie</td></tr><tr><td>endocrinology</td><td>Endocrinologie</td></tr><tr><td>respiratory</td><td>Maladies respiratoires</td></tr><tr><td>gastroenterology</td><td>Gastroentérologie</td></tr><tr><td>hematology</td><td>Hématologie</td></tr><tr><td>rheumatology</td><td>Rhumatologie</td></tr><tr><td>dermatology</td><td>Dermatologie</td></tr><tr><td>psychiatry</td><td>Psychiatrie</td></tr><tr><td>rare-diseases</td><td>Maladies rares</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ValueSet TherapeuticAreasValueSet</b></p><a name="TherapeuticAreasValueSet"> </a><a name="hcTherapeuticAreasValueSet"> </a><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <code>http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas</code><span title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé"> version Non précisé (utilise la dernière version provenant du serveur de terminologie)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>oncology</td><td>Oncologie</td></tr><tr><td>cardiology</td><td>Cardiologie</td></tr><tr><td>neurology</td><td>Neurologie</td></tr><tr><td>infectious-disease</td><td>Maladies infectieuses</td></tr><tr><td>immunology</td><td>Immunologie</td></tr><tr><td>endocrinology</td><td>Endocrinologie</td></tr><tr><td>respiratory</td><td>Maladies respiratoires</td></tr><tr><td>gastroenterology</td><td>Gastroentérologie</td></tr><tr><td>hematology</td><td>Hématologie</td></tr><tr><td>rheumatology</td><td>Rhumatologie</td></tr><tr><td>dermatology</td><td>Dermatologie</td></tr><tr><td>psychiatry</td><td>Psychiatrie</td></tr><tr><td>rare-diseases</td><td>Maladies rares</td></tr></table></li></ul></div>
   </text>
-  <url value="http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"/>
+  <url value="http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas"/>
   <version value="0.1.0"/>
   <name value="TherapeuticAreasValueSet"/>
   <title value="Therapeutic Areas for Clinical Trials"/>
   <status value="draft"/>
-  <date value="2025-12-07T16:24:07+01:00"/>
-  <publisher value="DOCILIUM"/>
+  <date value="2025-12-07T21:23:47+01:00"/>
+  <publisher value="DOCELIUM"/>
   <contact>
-    <name value="DOCILIUM"/>
+    <name value="DOCELIUM"/>
     <telecom>
       <system value="url"/>
-      <value value="http://docilium.org"/>
+      <value value="http://docelium.org"/>
     </telecom>
   </contact>
   <compose>
     <include>
-      <system value="http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas"/>
+      <system value="http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas"/>
       <concept>
         <code value="oncology"/>
         <display value="Oncologie"/>
