@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://docilium.health/fhir/ctpm/ValueSet/TherapeuticAreasValueSet> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TherapeuticAreasValueSet"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ValueSet TherapeuticAreasValueSet</b></p><a name=\"TherapeuticAreasValueSet\"> </a><a name=\"hcTherapeuticAreasValueSet\"> </a><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <code>http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas</code><span title=\"La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé\"> version Non précisé (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>oncology</td><td>Oncologie</td></tr><tr><td>cardiology</td><td>Cardiologie</td></tr><tr><td>neurology</td><td>Neurologie</td></tr><tr><td>infectious-disease</td><td>Maladies infectieuses</td></tr><tr><td>immunology</td><td>Immunologie</td></tr><tr><td>endocrinology</td><td>Endocrinologie</td></tr><tr><td>respiratory</td><td>Maladies respiratoires</td></tr><tr><td>gastroenterology</td><td>Gastroentérologie</td></tr><tr><td>hematology</td><td>Hématologie</td></tr><tr><td>rheumatology</td><td>Rhumatologie</td></tr><tr><td>dermatology</td><td>Dermatologie</td></tr><tr><td>psychiatry</td><td>Psychiatrie</td></tr><tr><td>rare-diseases</td><td>Maladies rares</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"^^xsd:anyURI ;
+     fhir:l <http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TherapeuticAreasValueSet"] ; # 
+  fhir:title [ fhir:v "Therapeutic Areas for Clinical Trials"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-07T16:24:07+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DOCILIUM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DOCILIUM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://docilium.org" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas"^^xsd:anyURI ;
+         fhir:l <http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "oncology" ] ;
+         fhir:display [ fhir:v "Oncologie" ]
+       ] [
+         fhir:code [ fhir:v "cardiology" ] ;
+         fhir:display [ fhir:v "Cardiologie" ]
+       ] [
+         fhir:code [ fhir:v "neurology" ] ;
+         fhir:display [ fhir:v "Neurologie" ]
+       ] [
+         fhir:code [ fhir:v "infectious-disease" ] ;
+         fhir:display [ fhir:v "Maladies infectieuses" ]
+       ] [
+         fhir:code [ fhir:v "immunology" ] ;
+         fhir:display [ fhir:v "Immunologie" ]
+       ] [
+         fhir:code [ fhir:v "endocrinology" ] ;
+         fhir:display [ fhir:v "Endocrinologie" ]
+       ] [
+         fhir:code [ fhir:v "respiratory" ] ;
+         fhir:display [ fhir:v "Maladies respiratoires" ]
+       ] [
+         fhir:code [ fhir:v "gastroenterology" ] ;
+         fhir:display [ fhir:v "Gastroentérologie" ]
+       ] [
+         fhir:code [ fhir:v "hematology" ] ;
+         fhir:display [ fhir:v "Hématologie" ]
+       ] [
+         fhir:code [ fhir:v "rheumatology" ] ;
+         fhir:display [ fhir:v "Rhumatologie" ]
+       ] [
+         fhir:code [ fhir:v "dermatology" ] ;
+         fhir:display [ fhir:v "Dermatologie" ]
+       ] [
+         fhir:code [ fhir:v "psychiatry" ] ;
+         fhir:display [ fhir:v "Psychiatrie" ]
+       ] [
+         fhir:code [ fhir:v "rare-diseases" ] ;
+         fhir:display [ fhir:v "Maladies rares" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

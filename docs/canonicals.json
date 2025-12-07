@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "ctpm",
+    "type" : "ImplementationGuide",
+    "url" : "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm",
+    "version" : "0.1.0",
+    "name" : "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG"
+  },
+  {
+    "id" : "clinical-study",
+    "type" : "StructureDefinition",
+    "url" : "http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study",
+    "version" : "0.1.0",
+    "name" : "ClinicalStudy"
+  },
+  {
+    "id" : "TherapeuticAreasValueSet",
+    "type" : "ValueSet",
+    "url" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas",
+    "version" : "0.1.0",
+    "name" : "TherapeuticAreasValueSet"
+  }
+]

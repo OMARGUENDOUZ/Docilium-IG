@@ -1,0 +1,10 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-ctpm.json	1682	-	0	0	0	0	0	0	22	105	0	0	0	0	0	0	0	1	0	0	115	127	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-clinical-study.json	1947	22	0	173	1	0	0	0	0	76	0	0	1	0	0	0	0	4	0	0	560	4586	0	0	0	11	1	2
+fsh-generated/resources/ValueSet-TherapeuticAreasValueSet.json	1727	17	0	0	0	0	0	0	1	176	0	0	0	0	0	0	0	0	0	0	38	1044	0	0	0	1	0	0
+\fsh-generated\includes\fsh-link-references.md	123	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0
+\fsh-generated\includes\menu.xml	1061	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0
+\input\pagecontent\index.md	135	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0
+\template\config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0
+\template\config\_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0
+\temp\pages\_includes\artifacts.xml	2012	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	5	0	0	0	0	0	0

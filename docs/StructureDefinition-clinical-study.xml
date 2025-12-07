@@ -1,0 +1,3069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="clinical-study"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : StructureDefinition clinical-study</b></p><a name="clinical-study"> </a><a name="hcclinical-study"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy">ResearchStudy</a><a name="ResearchStudy"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/researchstudy.html">ResearchStudy</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Investigation to increase healthcare-related patient-independent knowledge</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.identifier">identifier</a><a name="ResearchStudy.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Business Identifier for study</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.title">title</a><a name="ResearchStudy.title"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Human readable name of the study</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.phase">phase</a><a name="ResearchStudy.phase"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">n-a | early-phase-1 | phase-1 | phase-1-phase-2 | phase-2 | phase-2-phase-3 | phase-3 | phase-4</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.classifier">classifier</a><a name="ResearchStudy.classifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Classification for the study</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-TherapeuticAreasValueSet.html" title="http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas" class="binding">Therapeutic Areas for Clinical Trials</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.associatedParty">associatedParty</a><a name="ResearchStudy.associatedParty"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Sponsors, collaborators, and other parties</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.recruitment">recruitment</a><a name="ResearchStudy.recruitment"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Target or actual group of participants enrolled in study</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.recruitment.targetNumber">targetNumber</a><a name="ResearchStudy.recruitment.targetNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">unsignedInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Estimated total number of participants to be enrolled</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-clinical-study-definitions.html#ResearchStudy.recruitment.actualNumber">actualNumber</a><a name="ResearchStudy.recruitment.actualNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">unsignedInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Actual total number of participants enrolled in study</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <url value="http://docilium.health/fhir/ctpm/StructureDefinition/clinical-study"/>
+  <version value="0.1.0"/>
+  <name value="ClinicalStudy"/>
+  <title value="Clinical Study Profile"/>
+  <status value="draft"/>
+  <date value="2025-12-07T16:24:07+01:00"/>
+  <publisher value="DOCILIUM"/>
+  <contact>
+    <name value="DOCILIUM"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://docilium.org"/>
+    </telecom>
+  </contact>
+  <description value="A profile for clinical studies."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="w5"/>
+    <uri value="http://hl7.org/fhir/fivews"/>
+    <name value="FiveWs Pattern Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="BRIDG5.1"/>
+    <uri value="https://bridgmodel.nci.nih.gov"/>
+    <name value="BRIDG 5.1 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 V2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="clinicaltrials-gov"/>
+    <uri value="http://clinicaltrials.gov"/>
+    <name value="ClinicalTrials.gov Mapping"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ResearchStudy"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="ResearchStudy">
+      <path value="ResearchStudy"/>
+      <short value="Investigation to increase healthcare-related patient-independent knowledge"/>
+      <definition value="A scientific study of nature that sometimes includes processes involved in health and disease. For example, clinical trials are research studies that involve people. These studies may be related to new ways to screen, prevent, diagnose, and treat disease. They may also study certain outcomes and certain groups of people by looking at data collected in the past or future."/>
+      <comment value="Need to make sure we encompass public health studies."/>
+      <alias value="Clinical Trial"/>
+      <alias value="Study"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="dom-2"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/>
+        <expression value="contained.contained.empty()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-3"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-4"/>
+        <severity value="error"/>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
+        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-5"/>
+        <severity value="error"/>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"/>
+        <expression value="contained.meta.security.empty()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation">
+          <valueMarkdown value="When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."/>
+        </extension>
+        <key value="dom-6"/>
+        <severity value="warning"/>
+        <human value="A resource should have narrative for robust management"/>
+        <expression value="text.`div`.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Entity, Role, or Act,Observation[classCode=CLNTRL, moodCode=EVN]"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="clinical.diagnostics"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="ObservationalStudyProtocolVersion; Study;&#xA;StudyProtocolVersion"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.id">
+      <path value="ResearchStudy.id"/>
+      <short value="Logical id of this artifact"/>
+      <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
+      <comment value="Within the context of the FHIR RESTful interactions, the resource has an id except for cases like the create and conditional update. Otherwise, the use of the resouce id depends on the given use case."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="id"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+    </element>
+    <element id="ResearchStudy.meta">
+      <path value="ResearchStudy.meta"/>
+      <short value="Metadata about the resource"/>
+      <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.meta"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Meta"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+    </element>
+    <element id="ResearchStudy.implicitRules">
+      <path value="ResearchStudy.implicitRules"/>
+      <short value="A set of rules under which this content was created"/>
+      <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."/>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of its narrative along with other profiles, value sets, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.implicitRules"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="true"/>
+      <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies its meaning or interpretation"/>
+      <isSummary value="true"/>
+    </element>
+    <element id="ResearchStudy.language">
+      <path value="ResearchStudy.language"/>
+      <short value="Language of the resource content"/>
+      <definition value="The base language in which the resource is written."/>
+      <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language"/>
+        </extension>
+        <strength value="required"/>
+        <description value="IETF language tag for a human language"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
+        <additional>
+          <purpose value="starter"/>
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages|5.0.0"/>
+        </additional>
+      </binding>
+    </element>
+    <element id="ResearchStudy.text">
+      <path value="ResearchStudy.text"/>
+      <short value="Text summary of the resource, for human interpretation"/>
+      <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      <comment value="Contained resources do not have a narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later."/>
+      <alias value="narrative"/>
+      <alias value="html"/>
+      <alias value="xhtml"/>
+      <alias value="display"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Narrative"/>
+      </type>
+      <condition value="dom-6"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.text?"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.contained">
+      <path value="ResearchStudy.contained"/>
+      <short value="Contained, inline Resources"/>
+      <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning."/>
+      <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags in their meta elements, but SHALL NOT have security labels."/>
+      <alias value="inline resources"/>
+      <alias value="anonymous resources"/>
+      <alias value="contained resources"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.contained"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+      <condition value="dom-2"/>
+      <condition value="dom-4"/>
+      <condition value="dom-3"/>
+      <condition value="dom-5"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.extension">
+      <path value="ResearchStudy.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.modifierExtension">
+      <path value="ResearchStudy.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.url">
+      <path value="ResearchStudy.url"/>
+      <short value="Canonical identifier for this study resource"/>
+      <definition value="Canonical identifier for this study resource, represented as a globally unique URI."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.url"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.identifier">
+      <path value="ResearchStudy.identifier"/>
+      <short value="Business Identifier for study"/>
+      <definition value="Identifiers assigned to this research study by the sponsor or other systems."/>
+      <requirements value="Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Organization's Unique Protocol ID; Secondary IDs"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="No BRIDG mapping (although there is  DocumentVersion.identifier &gt; StudyProtocolDocumentVersion, this is arguably a different semantic)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".identifier"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.version">
+      <path value="ResearchStudy.version"/>
+      <short value="The business version for the study record"/>
+      <definition value="The business version for the study record."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.version"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.name">
+      <path value="ResearchStudy.name"/>
+      <short value="Name for this study (computer friendly)"/>
+      <definition value="Name for this study (computer friendly)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.title">
+      <path value="ResearchStudy.title"/>
+      <short value="Human readable name of the study"/>
+      <definition value="The human readable name of the research study."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.title"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Brief Title"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="No BRIDG mapping (although there is  StudyProtocolDocumentVersionPublicTitle this is arguably a different semantic: title of a document vs title of a research study)"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.label">
+      <path value="ResearchStudy.label"/>
+      <short value="Additional names for the study"/>
+      <definition value="Additional names for the study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.label"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.label.id">
+      <path value="ResearchStudy.label.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.label.extension">
+      <path value="ResearchStudy.label.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.label.modifierExtension">
+      <path value="ResearchStudy.label.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.label.type">
+      <path value="ResearchStudy.label.type"/>
+      <short value="primary | official | scientific | plain-language | subtitle | short-title | acronym | earlier-title | language | auto-translated | human-use | machine-use | duplicate-uid"/>
+      <definition value="Kind of name."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.label.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="TitleType"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="desc."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/title-type|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.label.value">
+      <path value="ResearchStudy.label.value"/>
+      <short value="The name"/>
+      <definition value="The name."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.label.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.protocol">
+      <path value="ResearchStudy.protocol"/>
+      <short value="Steps followed in executing study"/>
+      <definition value="The set of steps expected to be performed as part of the execution of the study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.protocol"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Interventions; Arm/Intervention Cross-Reference"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolDocumentVersionPublicTitle.name"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=DEFN].target"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.partOf">
+      <path value="ResearchStudy.partOf"/>
+      <short value="Part of larger study"/>
+      <definition value="A larger research study of which this particular study is a component or step."/>
+      <requirements value="Allows breaking a study into components (e.g. by study site) each with their own PI, status, enrollment, etc."/>
+      <alias value="container"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.partOf"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
+          <valueBoolean value="true"/>
+        </extension>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="CompanionStudyRelationship"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=COMP].source[moodCode=EVN]"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.relatedArtifact">
+      <path value="ResearchStudy.relatedArtifact"/>
+      <short value="References, URLs, and attachments"/>
+      <definition value="Citations, references, URLs and other related documents.  When using relatedArtifact to share URLs, the relatedArtifact.type will often be set to one of &quot;documentation&quot; or &quot;supported-with&quot; and the URL value will often be in relatedArtifact.document.url but another possible location is relatedArtifact.resource when it is a canonical URL."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.relatedArtifact"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="RelatedArtifact"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Citations, Links, Available Study Data/Documents"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolDocument, StudyProtocolDocumentVersion"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.date">
+      <path value="ResearchStudy.date"/>
+      <short value="Date the resource last changed"/>
+      <definition value="The date (and optionally time) when the ResearchStudy Resource was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the ResearchStudy Resource changes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.status">
+      <path value="ResearchStudy.status"/>
+      <short value="draft | active | retired | unknown"/>
+      <definition value="The publication state of the resource (not of the study)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="true"/>
+      <isModifierReason value="This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PublicationStatus"/>
+        </extension>
+        <strength value="required"/>
+        <description value="Codes that convey the current publication status of the research study resource."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/publication-status|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.status"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyOverallStatus.code"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".status"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.primaryPurposeType">
+      <path value="ResearchStudy.primaryPurposeType"/>
+      <short value="treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility"/>
+      <definition value="The type of study based upon the intent of the study activities. A classification of the intent of the study."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.primaryPurposeType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyPrimaryPurposeType"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="Codes for the main intent of the study."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolVersion.primaryPurposeTypeCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.phase">
+      <path value="ResearchStudy.phase"/>
+      <short value="n-a | early-phase-1 | phase-1 | phase-1-phase-2 | phase-2 | phase-2-phase-3 | phase-3 | phase-4"/>
+      <definition value="The stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.phase"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyPhase"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-phase|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Study Phase"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolVersion.phaseCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.studyDesign">
+      <path value="ResearchStudy.studyDesign"/>
+      <short value="Classifications of the study design characteristics"/>
+      <definition value="Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.studyDesign"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="StudyDesign"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="This is a set of terms for study design characteristics."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/study-design|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Study Type; Primary Purpose; Interventional Model; Masking; Allocation; study Classification; Observational Study Model; Time Perspective; Biospecimen Retention"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="InterventionalStudyProtocolVersion; InterventionalStudyProtocol.allocationCode; InterventionalStudyProtocol.blindedRoleCode; InterventionalStudyProtocol.blindingSchemaCode; InterventionalStudyProtocol.controlTypeCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.focus">
+      <path value="ResearchStudy.focus"/>
+      <short value="Drugs, devices, etc. under study"/>
+      <definition value="The medication(s), food(s), therapy(ies), device(s) or other concerns or interventions that the study is seeking to gain more information about."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.focus"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableReference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EvidenceVariable|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyFocusType"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Common codes of research study focus"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-focus-type|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.condition">
+      <path value="ResearchStudy.condition"/>
+      <short value="Condition being studied"/>
+      <definition value="The condition that is the focus of the study.  For example, In a study to examine risk factors for Lupus, might have as an inclusion criterion &quot;healthy volunteer&quot;, but the target condition code would be a Lupus SNOMED code."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.condition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ConditionCode"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Identification of the condition or diagnosis."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Conditions"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.what[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyCondition.code"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.keyword">
+      <path value="ResearchStudy.keyword"/>
+      <short value="Used to search for the study"/>
+      <definition value="Key terms to aid in searching for or filtering the study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.keyword"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyKeyword"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Words associated with the study that may be useful in discovery."/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Keywords"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="DocumentVersion.keywordCode; DocumentVersion.keywordText"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.region">
+      <path value="ResearchStudy.region"/>
+      <short value="Geographic area for the study"/>
+      <definition value="A country, state or other area where the study is taking place rather than its precise geographic location or address."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.region"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Jurisdiction"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="Countries and regions within which this artifact is targeted for use."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolVersion.participatingLocationCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.descriptionSummary">
+      <path value="ResearchStudy.descriptionSummary"/>
+      <short value="Brief text explaining the study"/>
+      <definition value="A brief text for explaining the study."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.descriptionSummary"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.description">
+      <path value="ResearchStudy.description"/>
+      <short value="Detailed narrative of the study"/>
+      <definition value="A detailed and human-readable narrative of the study. E.g., study abstract."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Detailed Description"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyProtocolDocumentVersion.publicDescription"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.period">
+      <path value="ResearchStudy.period"/>
+      <short value="When the study began and ended"/>
+      <definition value="Identifies the start date and the expected (or actual, depending on status) end date for the study."/>
+      <alias value="timing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Study Start Date (start); Study Completion Date (end)"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.done[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="ProjectConduct.dateRange; StudyProtocolVersion.plannedDuration"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".effectiveTime"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.site">
+      <path value="ResearchStudy.site"/>
+      <short value="Facility where study activities are conducted"/>
+      <definition value="A facility in which study activities are conducted."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.site"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Facility"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.where[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="PlannedStudySite; StudySite"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.note">
+      <path value="ResearchStudy.note"/>
+      <short value="Comments made about the study"/>
+      <definition value="Comments made about the study by the performer, subject or other participants."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.note"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Annotation"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="No BRIDG mapping"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship(typeCode=SUBJ].source[classCode=ANNGEN, moodCode=EVN].value[xsi:type=ST]"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.classifier">
+      <path value="ResearchStudy.classifier"/>
+      <short value="Classification for the study"/>
+      <definition value="Additional grouping mechanism or categorization of a research study. Example: FDA regulated device, FDA regulated drug, MPG Paragraph 23b (a German legal requirement), IRB-exempt, etc. Implementation Note: do not use the classifier element to support existing semantics that are already supported thru explicit elements in the resource."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.classifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.associatedParty">
+      <path value="ResearchStudy.associatedParty"/>
+      <short value="Sponsors, collaborators, and other parties"/>
+      <definition value="Sponsors, collaborators, and other parties."/>
+      <comment value="For a Sponsor or a PrincipalInvestigator use the dedicated attributes provided."/>
+      <requirements value="While there are explicit attributes for a Sponsor and a PrincipalInvestigator many trial record a range of other organizations and individuals in key roles."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.associatedParty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.associatedParty.id">
+      <path value="ResearchStudy.associatedParty.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.associatedParty.extension">
+      <path value="ResearchStudy.associatedParty.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.associatedParty.modifierExtension">
+      <path value="ResearchStudy.associatedParty.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.associatedParty.name">
+      <path value="ResearchStudy.associatedParty.name"/>
+      <short value="Name of associated party"/>
+      <definition value="Name of associated party."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.associatedParty.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.associatedParty.role">
+      <path value="ResearchStudy.associatedParty.role"/>
+      <short value="sponsor | lead-sponsor | sponsor-investigator | primary-investigator | collaborator | funding-source | general-contact | recruitment-contact | sub-investigator | study-director | study-chair"/>
+      <definition value="Type of association."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.associatedParty.role"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyPartyRole"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="desc."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-party-role|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.associatedParty.period">
+      <path value="ResearchStudy.associatedParty.period"/>
+      <short value="When active in the role"/>
+      <definition value="Identifies the start date and the end date of the associated party in the role."/>
+      <comment value="The cardinality is 0..* due to the fact that an associated party may be intermittently active in a given role over multiple time periods."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.associatedParty.period"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.associatedParty.classifier">
+      <path value="ResearchStudy.associatedParty.classifier"/>
+      <short value="nih | fda | government | nonprofit | academic | industry"/>
+      <definition value="A categorization other than role for the associated party."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.associatedParty.classifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyPartyOrganizationType"/>
+        </extension>
+        <strength value="example"/>
+        <description value="A characterization or type of the entity."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-party-organization-type|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.associatedParty.party">
+      <path value="ResearchStudy.associatedParty.party"/>
+      <short value="Individual or organization associated with study (use practitionerRole to specify their organisation)"/>
+      <definition value="Individual or organization associated with study (use practitionerRole to specify their organisation)."/>
+      <comment value="Suggestions of a better attribute name are appreciated"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.associatedParty.party"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.progressStatus">
+      <path value="ResearchStudy.progressStatus"/>
+      <short value="Status of study with time for that status"/>
+      <definition value="Status of study with time for that status."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.progressStatus"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.progressStatus.id">
+      <path value="ResearchStudy.progressStatus.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.progressStatus.extension">
+      <path value="ResearchStudy.progressStatus.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.progressStatus.modifierExtension">
+      <path value="ResearchStudy.progressStatus.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.progressStatus.state">
+      <path value="ResearchStudy.progressStatus.state"/>
+      <short value="Label for status or state (e.g. recruitment status)"/>
+      <definition value="Label for status or state (e.g. recruitment status)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.progressStatus.state"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyStudyStatus"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="defn."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-status|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.progressStatus.actual">
+      <path value="ResearchStudy.progressStatus.actual"/>
+      <short value="Actual if true else anticipated"/>
+      <definition value="An indication of whether or not the date is a known date when the state changed or will change. A value of true indicates a known date. A value of false indicates an estimated date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.progressStatus.actual"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.progressStatus.period">
+      <path value="ResearchStudy.progressStatus.period"/>
+      <short value="Date range"/>
+      <definition value="Date range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.progressStatus.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.whyStopped">
+      <path value="ResearchStudy.whyStopped"/>
+      <short value="accrual-goal-met | closed-due-to-toxicity | closed-due-to-lack-of-study-progress | temporarily-closed-per-study-design"/>
+      <definition value="A description and/or code explaining the premature termination of the study."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.whyStopped"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyReasonStopped"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Codes for why the study ended prematurely."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-reason-stopped|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Why Study Stopped"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.why[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyOverallStatus.studyStoppedReasonCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.recruitment">
+      <path value="ResearchStudy.recruitment"/>
+      <short value="Target or actual group of participants enrolled in study"/>
+      <definition value="Target or actual group of participants enrolled in study."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.recruitment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Enrollment; Number of Groups/Cohorts (= number of &quot;enrollment&quot; instances); Groups (Group/Cohort Label = Group.name; Group/Cohort Description = Group.description); Eligibility (Group criteria)"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.subject[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="InterventionalStudyProtocol.interventionGroupQuantity"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=SBJ].role"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.recruitment.id">
+      <path value="ResearchStudy.recruitment.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.recruitment.extension">
+      <path value="ResearchStudy.recruitment.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.recruitment.modifierExtension">
+      <path value="ResearchStudy.recruitment.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.recruitment.targetNumber">
+      <path value="ResearchStudy.recruitment.targetNumber"/>
+      <short value="Estimated total number of participants to be enrolled"/>
+      <definition value="Estimated total number of participants to be enrolled."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.recruitment.targetNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.recruitment.actualNumber">
+      <path value="ResearchStudy.recruitment.actualNumber"/>
+      <short value="Actual total number of participants enrolled in study"/>
+      <definition value="Actual total number of participants enrolled in study."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.recruitment.actualNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.recruitment.eligibility">
+      <path value="ResearchStudy.recruitment.eligibility"/>
+      <short value="Inclusion and exclusion criteria"/>
+      <definition value="Inclusion and exclusion criteria."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.recruitment.eligibility"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EvidenceVariable|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.recruitment.actualGroup">
+      <path value="ResearchStudy.recruitment.actualGroup"/>
+      <short value="Group of participants who were enrolled in study"/>
+      <definition value="Group of participants who were enrolled in study."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.recruitment.actualGroup"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Enrollment; Number of Groups/Cohorts (= number of &quot;enrollment&quot; instances); Groups (Group/Cohort Label = Group.name; Group/Cohort Description = Group.description); Eligibility (Group criteria)"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.subject[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="InterventionalStudyProtocol.interventionGroupQuantity"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=SBJ].role"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup">
+      <path value="ResearchStudy.comparisonGroup"/>
+      <short value="Defined path through the study for a subject"/>
+      <definition value="Describes an expected event or sequence of events for one of the subjects of a study. E.g. for a living subject: exposure to drug A, wash-out, exposure to drug B, wash-out, follow-up. E.g. for a stability study: {store sample from lot A at 25 degrees for 1 month}, {store sample from lot A at 40 degrees for 1 month}."/>
+      <comment value="In many clinical trials this is refered to as the ARM of the study, but such a term is not used in other sorts of trials even when there is a comparison between two or more groups."/>
+      <alias value="arm"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Arms"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="Arm"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.id">
+      <path value="ResearchStudy.comparisonGroup.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.extension">
+      <path value="ResearchStudy.comparisonGroup.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.modifierExtension">
+      <path value="ResearchStudy.comparisonGroup.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.linkId">
+      <path value="ResearchStudy.comparisonGroup.linkId"/>
+      <short value="Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily"/>
+      <definition value="Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.linkId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.name">
+      <path value="ResearchStudy.comparisonGroup.name"/>
+      <short value="Label for study comparisonGroup"/>
+      <definition value="Unique, human-readable label for this comparisonGroup of the study."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.name"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Arm Label"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="Arm.name"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.type">
+      <path value="ResearchStudy.comparisonGroup.type"/>
+      <short value="Categorization of study comparisonGroup"/>
+      <definition value="Categorization of study comparisonGroup, e.g. experimental, active comparator, placebo comparater."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyArmType"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="desc."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-arm-type|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Arm Type"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="Arm.typeCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.description">
+      <path value="ResearchStudy.comparisonGroup.description"/>
+      <short value="Short explanation of study path"/>
+      <definition value="A succinct description of the path through the study that would be followed by a subject adhering to this comparisonGroup."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="clinicaltrials-gov"/>
+        <map value="Arm Description"/>
+      </mapping>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="Arm.description"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.intendedExposure">
+      <path value="ResearchStudy.comparisonGroup.intendedExposure"/>
+      <short value="Interventions or exposures in this comparisonGroup or cohort"/>
+      <definition value="Interventions or exposures in this comparisonGroup or cohort."/>
+      <requirements value="this is necessary for ClinicalTrials.gov use which relates  1 to many interventions to comparisonGroups (aka arms)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.intendedExposure"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EvidenceVariable|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.comparisonGroup.observedGroup">
+      <path value="ResearchStudy.comparisonGroup.observedGroup"/>
+      <short value="Group of participants who were enrolled in study comparisonGroup"/>
+      <definition value="Group of participants who were enrolled in study comparisonGroup."/>
+      <requirements value="This is necessary to relate comparisonGroups to actual groups"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.comparisonGroup.observedGroup"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.objective">
+      <path value="ResearchStudy.objective"/>
+      <short value="A goal for the study"/>
+      <definition value="A goal that the study is aiming to achieve in terms of a scientific question to be answered by the analysis of data collected during the study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.objective"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyObjective"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.id">
+      <path value="ResearchStudy.objective.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.extension">
+      <path value="ResearchStudy.objective.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.modifierExtension">
+      <path value="ResearchStudy.objective.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.name">
+      <path value="ResearchStudy.objective.name"/>
+      <short value="Label for the objective"/>
+      <definition value="Unique, human-readable label for this objective of the study."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.objective.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="No BRIDG mapping (BRIDG has a description, but not a name)"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.type">
+      <path value="ResearchStudy.objective.type"/>
+      <short value="primary | secondary | exploratory"/>
+      <definition value="The kind of study objective."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.objective.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyObjectiveType"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="Codes for the kind of study objective."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-objective-type|5.0.0"/>
+      </binding>
+      <mapping>
+        <identity value="BRIDG5.1"/>
+        <map value="StudyObjective.typeCode"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.objective.description">
+      <path value="ResearchStudy.objective.description"/>
+      <short value="Description of the objective"/>
+      <definition value="Free text description of the objective of the study.  This is what the study is trying to achieve rather than how it is going to achieve it (see ResearchStudy.description)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.objective.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure">
+      <path value="ResearchStudy.outcomeMeasure"/>
+      <short value="A variable measured during the study"/>
+      <definition value="An &quot;outcome measure&quot;, &quot;endpoint&quot;, &quot;effect measure&quot; or &quot;measure of effect&quot; is a specific measurement or observation used to quantify the effect of experimental variables on the participants in a study, or for observational studies, to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."/>
+      <comment value="A study may have multiple distinct outcome measures that can be used to assess the overall goal for a study. The goal of a study is in the objective whereas the metric by which the goal is assessed is the outcomeMeasure. Examples: Time to Local Recurrence (TLR), Disease-free Survival (DFS), 30 Day Mortality, Systolic BP"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.outcomeMeasure"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.id">
+      <path value="ResearchStudy.outcomeMeasure.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <condition value="ele-1"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.extension">
+      <path value="ResearchStudy.outcomeMeasure.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.modifierExtension">
+      <path value="ResearchStudy.outcomeMeasure.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.name">
+      <path value="ResearchStudy.outcomeMeasure.name"/>
+      <short value="Label for the outcome"/>
+      <definition value="Label for the outcome."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.outcomeMeasure.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.type">
+      <path value="ResearchStudy.outcomeMeasure.type"/>
+      <short value="primary | secondary | exploratory"/>
+      <definition value="The parameter or characteristic being assessed as one of the values by which the study is assessed."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.outcomeMeasure.type"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ResearchStudyObjectiveType"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="defn."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/research-study-objective-type|5.0.0"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.description">
+      <path value="ResearchStudy.outcomeMeasure.description"/>
+      <short value="Description of the outcome"/>
+      <definition value="Description of the outcome."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.outcomeMeasure.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.outcomeMeasure.reference">
+      <path value="ResearchStudy.outcomeMeasure.reference"/>
+      <short value="Structured outcome definition"/>
+      <definition value="Structured outcome definition."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ResearchStudy.outcomeMeasure.reference"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EvidenceVariable|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ResearchStudy.result">
+      <path value="ResearchStudy.result"/>
+      <short value="Link to results generated during the study"/>
+      <definition value="Link to one or more sets of results generated by the study.  Could also link to a research registry holding the results such as ClinicalTrials.gov."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ResearchStudy.result"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EvidenceReport|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Citation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ResearchStudy">
+      <path value="ResearchStudy"/>
+    </element>
+    <element id="ResearchStudy.identifier">
+      <path value="ResearchStudy.identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.title">
+      <path value="ResearchStudy.title"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.phase">
+      <path value="ResearchStudy.phase"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.classifier">
+      <path value="ResearchStudy.classifier"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas"/>
+      </binding>
+    </element>
+    <element id="ResearchStudy.associatedParty">
+      <path value="ResearchStudy.associatedParty"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.recruitment">
+      <path value="ResearchStudy.recruitment"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.recruitment.targetNumber">
+      <path value="ResearchStudy.recruitment.targetNumber"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ResearchStudy.recruitment.actualNumber">
+      <path value="ResearchStudy.recruitment.actualNumber"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

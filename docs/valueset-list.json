@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TherapeuticAreasValueSet",
+      "title" : "Therapeutic Areas for Clinical Trials",
+      "description" : "",
+      "systems" : [
+        "http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas"
+      ]
+    }
+  ]
+}
