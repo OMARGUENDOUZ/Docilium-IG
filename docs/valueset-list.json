@@ -6,7 +6,7 @@
       "status" : "draft",
       "name" : "TherapeuticAreasValueSet",
       "title" : "Therapeutic Areas for Clinical Trials",
-      "description" : "",
+      "description" : "A value set of therapeutic areas relevant to clinical trials.",
       "systems" : [
         "http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas"
       ]

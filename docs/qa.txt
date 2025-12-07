@@ -1,17 +1,16 @@
 ClinicalTrialPharmacyManagementImplementationGuide : Validation Results
 =========================================
 
-err = 4, warn = 16, info = 16
+err = 4, warn = 14, info = 16
 IG Publisher Version: 2.0.27
-Generated Sun Dec 07 21:26:22 CET 2025. FHIR version 5.0.0 for docelium#0.1.0 (canonical = http://docelium.health)
- Build Errors : 0 / 4 / 0
+Generated Sun Dec 07 21:44:26 CET 2025. FHIR version 5.0.0 for docelium#0.1.0 (canonical = http://docelium.health)
+ Build Errors : 0 / 3 / 0
  C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ImplementationGuide-docelium : 0 / 0 / 16
  C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\StructureDefinition-clinical-study : 0 / 8 / 1
  C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\StructureDefinition-clinical-trial-patient : 0 / 1 / 1
- C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet : 4 / 3 / 2
+ C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet : 4 / 2 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TherapeuticAreasValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -46,8 +45,7 @@ WARNING: StructureDefinition.where(url = 'http://docelium.health/StructureDefini
 ERROR: ValueSet.where(url = 'http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas'): Conformance resource C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet.json - the canonical URL (http://docelium.health/ValueSet/TherapeuticAreasValueSet) does not match the URL (http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: TherapeuticAreasValueSet/http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas
 WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas'
-INFORMATION: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/TherapeuticAreasValueSet: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
 WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/TherapeuticAreasValueSet: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'TherapeuticAreasValueSet'): Unable to expand imported value set: No server available
+ERROR: ValueSet.where(id = 'TherapeuticAreasValueSet'): Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://docelium.health/fhir/ctpm/CodeSystem/therapeutic-areas' could not be found, so the value set cannot be expanded
 ERROR: C:\Users\HP\Documents\Github\Docilium-IG\fsh-generated\resources\ValueSet-TherapeuticAreasValueSet: URL Mismatch http://docelium.health/ValueSet/TherapeuticAreasValueSet vs http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas

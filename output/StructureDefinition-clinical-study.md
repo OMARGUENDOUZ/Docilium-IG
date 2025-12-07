@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-study.csv),
   "name" : "ClinicalStudy",
   "title" : "Clinical Study Profile",
   "status" : "draft",
-  "date" : "2025-12-07T21:23:47+01:00",
+  "date" : "2025-12-07T21:41:42+01:00",
   "publisher" : "DOCELIUM",
   "contact" : [
     {

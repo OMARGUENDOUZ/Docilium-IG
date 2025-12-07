@@ -20,7 +20,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 These define sets of codes used by systems conforming to this implementation guide.
 
-| |
-| :--- |
-| [Therapeutic Areas for Clinical Trials](ValueSet-TherapeuticAreasValueSet.md) |
+| | |
+| :--- | :--- |
+| [Therapeutic Areas for Clinical Trials](ValueSet-TherapeuticAreasValueSet.md) | A value set of therapeutic areas relevant to clinical trials. |
 

@@ -10,9 +10,20 @@
 | *Official URL*:http://docelium.health/ImplementationGuide/docelium | *Version*:0.1.0 |
 | Draft as of 2025-12-07 | *Computable Name*:ClinicalTrialPharmacyManagementImplementationGuide |
 
-# Clinical Trial Pharmacy Management Implementation Guide (CTPM IG)
+# Clinical Trial Pharmacy Management Implementation Guide
 
-Feel free to modify this index page with your own awesome content!
+## Introduction
+
+The **Clinical Trial Pharmacy Management (CTPM) Implementation Guide** defines FHIR profiles, extensions, and workflows for managing investigational medicinal products (IMP) and non-investigational medicinal products (NIMP) in clinical trial pharmacy settings.
+
+This Implementation Guide provides a standardized, interoperable approach to:
+
+* **Drug accountability** and inventory management
+* **Dispensing workflows** with weight-based and BSA-based dosing
+* **Temperature monitoring** and cold chain integrity
+* **IWRS integration** (Manual, CSV, and API modes)
+* **Audit trails** with e-signatures for GCP/GMP compliance
+* **Destruction workflows** (local vs sponsor-managed)
 
 
 
@@ -27,7 +38,7 @@ Feel free to modify this index page with your own awesome content!
   "name" : "ClinicalTrialPharmacyManagementImplementationGuide",
   "title" : "Clinical Trial Pharmacy Management",
   "status" : "draft",
-  "date" : "2025-12-07T21:23:47+01:00",
+  "date" : "2025-12-07T21:41:42+01:00",
   "publisher" : "DOCELIUM",
   "contact" : [
     {
@@ -117,6 +128,7 @@ Feel free to modify this index page with your own awesome content!
           "reference" : "ValueSet/TherapeuticAreasValueSet"
         },
         "name" : "Therapeutic Areas for Clinical Trials",
+        "description" : "A value set of therapeutic areas relevant to clinical trials.",
         "isExample" : false
       }
     ],

@@ -11,7 +11,7 @@
   <name value="ClinicalTrialPharmacyManagementImplementationGuide"/>
   <title value="Clinical Trial Pharmacy Management"/>
   <status value="draft"/>
-  <date value="2025-12-07T21:23:47+01:00"/>
+  <date value="2025-12-07T21:41:42+01:00"/>
   <publisher value="DOCELIUM"/>
   <contact>
     <name value="DOCELIUM"/>
@@ -74,6 +74,7 @@
         <reference value="ValueSet/TherapeuticAreasValueSet"/>
       </reference>
       <name value="Therapeutic Areas for Clinical Trials"/>
+      <description value="A value set of therapeutic areas relevant to clinical trials."/>
       <isExample value="false"/>
     </resource>
     <page>

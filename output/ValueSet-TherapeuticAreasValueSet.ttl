@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TherapeuticAreasValueSet"] ; # 
   fhir:title [ fhir:v "Therapeutic Areas for Clinical Trials"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-07T21:23:47+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-07T21:41:42+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOCELIUM"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOCELIUM" ] ;
@@ -30,6 +30,7 @@
        fhir:value [ fhir:v "http://docelium.org" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "A value set of therapeutic areas relevant to clinical trials."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [

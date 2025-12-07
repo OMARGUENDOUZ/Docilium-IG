@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ClinicalTrialPharmacyManagementImplementationGuide"] ; # 
   fhir:title [ fhir:v "Clinical Trial Pharmacy Management"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-07T21:23:47+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-07T21:41:42+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DOCELIUM"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DOCELIUM" ] ;
@@ -134,6 +134,7 @@
          fhir:reference [ fhir:v "ValueSet/TherapeuticAreasValueSet" ]
        ] ;
        fhir:name [ fhir:v "Therapeutic Areas for Clinical Trials" ] ;
+       fhir:description [ fhir:v "A value set of therapeutic areas relevant to clinical trials." ] ;
        fhir:isExample [ fhir:v false ]
      ] ) ;
      fhir:page [

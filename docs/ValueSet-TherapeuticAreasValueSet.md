@@ -11,6 +11,9 @@
 | *Official URL*:http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas | *Version*:0.1.0 |
 | Draft as of 2025-12-07 | *Computable Name*:TherapeuticAreasValueSet |
 
+ 
+A value set of therapeutic areas relevant to clinical trials. 
+
  **References** 
 
 * [Clinical Study Profile](StructureDefinition-clinical-study.md)
@@ -51,7 +54,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "TherapeuticAreasValueSet",
   "title" : "Therapeutic Areas for Clinical Trials",
   "status" : "draft",
-  "date" : "2025-12-07T21:23:47+01:00",
+  "date" : "2025-12-07T21:41:42+01:00",
   "publisher" : "DOCELIUM",
   "contact" : [
     {
@@ -64,6 +67,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       ]
     }
   ],
+  "description" : "A value set of therapeutic areas relevant to clinical trials.",
   "compose" : {
     "include" : [
       {
