@@ -1,0 +1,19 @@
+{
+  "url" : "http://docilium.health/fhir/ctpm/ImplementationGuide/ctpm",
+  "name" : "ClinicalTrialPharmacyManagementImplementationGuideCTPMIG",
+  "title" : null,
+  "description" : "",
+  "status" : "draft",
+  "package-id" : "ctpm",
+  "ig-ver" : "0.1.0",
+  "date" : "Sun, 07 Dec, 2025 16:24:07 +0100",
+  "dateISO8601" : "2025-12-07T16:24:07+01:00",
+  "errs" : 4,
+  "warnings" : 15,
+  "hints" : 16,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1573186816
+}

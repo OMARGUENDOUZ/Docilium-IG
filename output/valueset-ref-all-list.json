@@ -1,0 +1,266 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://docilium.health/fhir/ctpm/ValueSet/therapeutic-areas",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TherapeuticAreasValueSet",
+      "title" : "Therapeutic Areas for Clinical Trials",
+      "description" : "",
+      "systems" : [
+        "http://docilium.health/fhir/ctpm/CodeSystem/therapeutic-areas"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-arm-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyArmType",
+      "title" : "Research Study Arm Type",
+      "description" : "Codes for the main intent of the study.",
+      "systems" : ["http://hl7.org/fhir/research-study-arm-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3078"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3078"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-focus-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyFocusType",
+      "title" : "Research Study Focus Type",
+      "description" : "Codes for the main intent of the study.",
+      "systems" : ["http://hl7.org/fhir/research-study-focus-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3076"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3076"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "Research Study Objective Type",
+      "description" : "Codes for the kind of study objective.",
+      "systems" : ["http://hl7.org/fhir/research-study-objective-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.823"],
+      "sources" : ["2.16.840.1.113883.4.642.3.823"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-party-organization-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPartyOrgType",
+      "title" : "Research Study Party Organization Type",
+      "description" : "This is a ResearchStudy's party organization type.",
+      "systems" : ["http://hl7.org/fhir/research-study-party-organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3077"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3077"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-party-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPartyRole",
+      "title" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
+      "systems" : ["http://hl7.org/fhir/research-study-party-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3075"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3075"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "Research Study Phase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "systems" : ["http://hl7.org/fhir/research-study-phase"],
+      "oids" : ["2.16.840.1.113883.4.642.3.821"],
+      "sources" : ["2.16.840.1.113883.4.642.3.821"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "Research Study Primary Purpose Type",
+      "description" : "Codes for the main intent of the study.",
+      "systems" : ["http://hl7.org/fhir/research-study-prim-purp-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.827"],
+      "sources" : ["2.16.840.1.113883.4.642.3.827"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "Research Study Reason Stopped",
+      "description" : "Codes for why the study ended prematurely.",
+      "systems" : ["http://hl7.org/fhir/research-study-reason-stopped"],
+      "oids" : ["2.16.840.1.113883.4.642.3.825"],
+      "sources" : ["2.16.840.1.113883.4.642.3.825"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyStatus",
+      "title" : "Research Study Status",
+      "description" : "Codes that convey the current status of the research study.",
+      "systems" : ["http://hl7.org/fhir/research-study-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.802",
+        "2.16.840.1.113883.4.642.3.819"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.802",
+        "2.16.840.1.113883.4.642.3.819"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/study-design",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "systems" : ["http://hl7.org/fhir/study-design"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3045"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3045"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/title-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://hl7.org/fhir/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2974"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2974"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Clinical Study Profile"
+    }
+  ]
+}

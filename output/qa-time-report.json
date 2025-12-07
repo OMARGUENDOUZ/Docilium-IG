@@ -1,0 +1,255 @@
+{
+  "date" : "Sun, 07 Dec, 2025 16:24:07 +0100",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\fsh-generated\\resources\\ImplementationGuide-ctpm.json",
+      "size" : 1682,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 54,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 105
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 14803
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 127
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 149,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-clinical-study.json",
+      "size" : 1947,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 22
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 173
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 54,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 76
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 750
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 560
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 4586
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 2294
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 149,
+          "length" : 11
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 175,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 175,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-TherapeuticAreasValueSet.json",
+      "size" : 1727,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 54,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 176
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 5047
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 38
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 1044
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 149,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "\\fsh-generated\\includes\\fsh-link-references.md",
+      "size" : 123,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "\\fsh-generated\\includes\\menu.xml",
+      "size" : 1061,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "\\input\\pagecontent\\index.md",
+      "size" : 135,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "\\template\\config",
+      "size" : 0,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "\\template\\config\\_config.yml",
+      "size" : 140,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "\\temp\\pages\\_includes\\artifacts.xml",
+      "size" : 2012,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 5
+        }
+      ]
+    }
+  ]
+}

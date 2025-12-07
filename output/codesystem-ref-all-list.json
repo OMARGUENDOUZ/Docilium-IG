@@ -1,0 +1,143 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-arm-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyArmType",
+      "title" : "ResearchStudy Arm Type Code System",
+      "description" : "Codes for the main intent of the study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-arm-type.html" : "Research Study Arm Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-focus-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyFocusType",
+      "title" : "ResearchStudy Focus Type Code System",
+      "description" : "Codes for the main intent of the study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-focus-type.html" : "Research Study Focus Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-objective-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudy Objective Type Code System",
+      "description" : "Codes for the kind of study objective.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-objective-type.html" : "Research Study Objective Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-party-organization-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyOrganizationType",
+      "title" : "ResearchStudy Party Organization Type Code System",
+      "description" : "This is a ResearchStudy's party organization type.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-party-organization-type.html" : "Research Study Party Organization Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-party-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRole",
+      "title" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1968"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-party-role.html" : "Research Study Party Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-phase",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudy Phase Code System",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-phase.html" : "Research Study Phase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-prim-purp-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudy Primary Purpose Type Code System",
+      "description" : "Codes for the main intent of a research study.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-prim-purp-type.html" : "Research Study Primary Purpose Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-reason-stopped",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudy Reason Stopped Code System",
+      "description" : "Codes for why the study ended prematurely.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-reason-stopped.html" : "Research Study Reason Stopped"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResearchStudyStatus",
+      "title" : "Research Study Status",
+      "description" : "Codes that convey the current status of the research study.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.820",
+        "2.16.840.1.113883.4.642.1.803"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-research-study-status.html" : "Research Study Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/study-design",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-study-design.html" : "Study Design"
+    },
+    {
+      "url" : "http://hl7.org/fhir/title-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TitleType",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1875"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-title-type.html" : "Title Type"
+    }
+  ]
+}
