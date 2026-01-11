@@ -1,2 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
-http://docelium.health/fhir/ctpm/ValueSet/therapeutic-areas,0.1.0,draft,,TherapeuticAreasValueSet,Therapeutic Areas for Clinical Trials,"A value set of therapeutic areas relevant to clinical trials.","StructureDefinition/clinical-study","Other"
